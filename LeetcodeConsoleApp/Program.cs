@@ -7,5 +7,6 @@ using LeetcodeConsoleApp.Solutions.TasksNotFromLeetcode;
 //ISolution algorithm = new MergeTwoSortedLists();
 //ISolution algorithm = new AddTwoNumbersSolution();
 //ISolution algorithm = new PathfindingIn2dMatrix();
-ISolution algorithm = new PathfindingFlights();
+//ISolution algorithm = new PathfindingFlights();
+ISolution algorithm = new MergeStringsAlternately();
 algorithm.Run();
