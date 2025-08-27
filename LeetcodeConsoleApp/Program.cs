@@ -10,5 +10,6 @@ using LeetcodeConsoleApp.Solutions.TasksNotFromLeetcode;
 //ISolution algorithm = new PathfindingFlights();
 //ISolution algorithm = new MergeStringsAlternately();
 //ISolution algorithm = new GreatestCommonDivisorOfStrings();
-ISolution algorithm = new SingleNumber();
+//ISolution algorithm = new SingleNumber();
+ISolution algorithm = new KidsWithGreatestNumberOfCandies();
 algorithm.Run();
