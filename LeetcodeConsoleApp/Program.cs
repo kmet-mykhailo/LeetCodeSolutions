@@ -11,5 +11,6 @@ using LeetcodeConsoleApp.Solutions.TasksNotFromLeetcode;
 //ISolution algorithm = new MergeStringsAlternately();
 //ISolution algorithm = new GreatestCommonDivisorOfStrings();
 //ISolution algorithm = new SingleNumber();
-ISolution algorithm = new KidsWithGreatestNumberOfCandies();
+//ISolution algorithm = new KidsWithGreatestNumberOfCandies();
+ISolution algorithm = new CanPlaceFlowers();
 algorithm.Run();
