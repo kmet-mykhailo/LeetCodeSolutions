@@ -16,5 +16,6 @@ using LeetcodeConsoleApp.Solutions.TasksNotFromLeetcode;
 //ISolution algorithm = new ReverseVowelsOfString();
 //ISolution algorithm = new ReverseWordsInString();
 //ISolution algorithm = new ProductOfArrayExceptSelf();
-ISolution algorithm = new IncreasingTripletSubsequence();
+//ISolution algorithm = new IncreasingTripletSubsequence();
+ISolution algorithm = new StringCompressionSolution();
 algorithm.Run();
