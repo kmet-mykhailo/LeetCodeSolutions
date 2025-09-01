@@ -18,5 +18,6 @@ using LeetcodeConsoleApp.Solutions.TasksNotFromLeetcode;
 //ISolution algorithm = new ProductOfArrayExceptSelf();
 //ISolution algorithm = new IncreasingTripletSubsequence();
 //ISolution algorithm = new StringCompressionSolution();
-ISolution algorithm = new MoveZeroesSolution();
+//ISolution algorithm = new MoveZeroesSolution();
+ISolution algorithm = new IsSubsequenceSolution();
 algorithm.Run();
