@@ -19,5 +19,6 @@ using LeetcodeConsoleApp.Solutions.TasksNotFromLeetcode;
 //ISolution algorithm = new MoveZeroesSolution();
 //ISolution algorithm = new IsSubsequenceSolution();
 //ISolution algorithm = new ContainerWithMostWater();
-ISolution algorithm = new MaxNumberOfKSumPairs();
+//ISolution algorithm = new MaxNumberOfKSumPairs();
+ISolution algorithm = new FindTheDifferenceOfTwoArrays();
 algorithm.Run();

@@ -32,7 +32,7 @@ namespace Leetcode.CodeGeneratorConsoleApp
             {
                 if (string.IsNullOrWhiteSpace(line)) continue;
 
-                var parts = line.Split(',', 3, StringSplitOptions.TrimEntries);
+                var parts = line.Split('|', 3, StringSplitOptions.TrimEntries);
                 if (parts.Length < 3) continue;
 
                 var record = new ProblemDescription
