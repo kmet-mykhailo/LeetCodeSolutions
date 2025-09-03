@@ -2,8 +2,6 @@
 using LeetcodeConsoleApp.Solutions;
 using LeetcodeConsoleApp.Solutions.TasksNotFromLeetcode;
 
-//TwoSum.Run();
-//RemoveDuplicatesFromSortedArray.Run();
 //ISolution algorithm = new MergeTwoSortedLists();
 //ISolution algorithm = new AddTwoNumbersSolution();
 //ISolution algorithm = new PathfindingIn2dMatrix();
@@ -20,5 +18,6 @@ using LeetcodeConsoleApp.Solutions.TasksNotFromLeetcode;
 //ISolution algorithm = new StringCompressionSolution();
 //ISolution algorithm = new MoveZeroesSolution();
 //ISolution algorithm = new IsSubsequenceSolution();
-ISolution algorithm = new ContainerWithMostWater();
+//ISolution algorithm = new ContainerWithMostWater();
+ISolution algorithm = new MaxNumberOfKSumPairs();
 algorithm.Run();
