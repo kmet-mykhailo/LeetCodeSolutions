@@ -1,26 +1,5 @@
 ﻿using LeetcodeConsoleApp;
 using LeetcodeConsoleApp.Solutions;
-using LeetcodeConsoleApp.Solutions.TasksNotFromLeetcode;
 
-//ISolution algorithm = new MergeTwoSortedLists();
-//ISolution algorithm = new AddTwoNumbersSolution();
-//ISolution algorithm = new PathfindingIn2dMatrix();
-//ISolution algorithm = new PathfindingFlights();
-//ISolution algorithm = new MergeStringsAlternately();
-//ISolution algorithm = new GreatestCommonDivisorOfStrings();
-//ISolution algorithm = new SingleNumber();
-//ISolution algorithm = new KidsWithGreatestNumberOfCandies();
-//ISolution algorithm = new CanPlaceFlowers();
-//ISolution algorithm = new ReverseVowelsOfString();
-//ISolution algorithm = new ReverseWordsInString();
-//ISolution algorithm = new ProductOfArrayExceptSelf();
-//ISolution algorithm = new IncreasingTripletSubsequence();
-//ISolution algorithm = new StringCompressionSolution();
-//ISolution algorithm = new MoveZeroesSolution();
-//ISolution algorithm = new IsSubsequenceSolution();
-//ISolution algorithm = new ContainerWithMostWater();
-//ISolution algorithm = new MaxNumberOfKSumPairs();
-//ISolution algorithm = new FindTheDifferenceOfTwoArrays();
-//ISolution algorithm = new FindTheHighestAltitude();
-ISolution algorithm = new FindPivotIndex();
+ISolution algorithm = new UniqueNumberOfOccurrences();
 algorithm.Run();
