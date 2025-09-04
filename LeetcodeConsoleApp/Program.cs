@@ -20,5 +20,6 @@ using LeetcodeConsoleApp.Solutions.TasksNotFromLeetcode;
 //ISolution algorithm = new IsSubsequenceSolution();
 //ISolution algorithm = new ContainerWithMostWater();
 //ISolution algorithm = new MaxNumberOfKSumPairs();
-ISolution algorithm = new FindTheDifferenceOfTwoArrays();
+//ISolution algorithm = new FindTheDifferenceOfTwoArrays();
+ISolution algorithm = new FindTheHighestAltitude();
 algorithm.Run();
