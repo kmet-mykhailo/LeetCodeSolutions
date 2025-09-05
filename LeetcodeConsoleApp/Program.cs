@@ -1,5 +1,5 @@
 ﻿using LeetcodeConsoleApp;
 using LeetcodeConsoleApp.Solutions;
 
-ISolution algorithm = new UniqueNumberOfOccurrences();
+ISolution algorithm = new DetermineIfTwoStringsAreClose();
 algorithm.Run();
