@@ -1,5 +1,5 @@
 ﻿using LeetcodeConsoleApp;
 using LeetcodeConsoleApp.Solutions;
 
-ISolution algorithm = new DetermineIfTwoStringsAreClose();
+ISolution algorithm = new EqualRowAndColumnPairs();
 algorithm.Run();
