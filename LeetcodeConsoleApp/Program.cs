@@ -1,5 +1,5 @@
 ﻿using LeetcodeConsoleApp;
 using LeetcodeConsoleApp.Solutions;
 
-ISolution algorithm = new EqualRowAndColumnPairs();
+ISolution algorithm = new RemovingStarsFromAString();
 algorithm.Run();
