@@ -37,17 +37,17 @@ namespace LeetcodeConsoleApp.Solutions
                 return addOne? new ListNode(1): null;
             }
 
-            int value1 = listNode1 != null ? listNode1.value : 0;
-            int value2 = listNode2 != null ? listNode2.value : 0;
+            int value1 = listNode1 != null ? listNode1.val : 0;
+            int value2 = listNode2 != null ? listNode2.val : 0;
             int value = value1 + value2 + (addOne ? 1 : 0);
 
             if (value >= 10)
             {
                 value -= 10;
-                return new ListNode(value, AddTwoNumbers(listNode1?.nextNode, listNode2?.nextNode, true));
+                return new ListNode(value, AddTwoNumbers(listNode1?.next, listNode2?.next, true));
             }
 
-            return new ListNode(value, AddTwoNumbers(listNode1?.nextNode, listNode2?.nextNode));
+            return new ListNode(value, AddTwoNumbers(listNode1?.next, listNode2?.next));
         }
     }
 }

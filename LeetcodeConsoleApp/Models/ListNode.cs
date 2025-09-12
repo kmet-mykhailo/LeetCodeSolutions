@@ -2,17 +2,17 @@
 {
     public class ListNode(int value, ListNode? nextNode = null)
     {
-        public readonly int value = value;
-        public readonly ListNode? nextNode = nextNode;
+        public readonly int val = value;
+        public readonly ListNode? next = nextNode;
 
         public override string ToString()
         {
-            if (nextNode == null)
+            if (next == null)
             {
-                return $"{value}";
+                return $"{val}";
             }
 
-            return $"{value},{nextNode.ToString()}";
+            return $"{val},{next}";
         }
     }
 }

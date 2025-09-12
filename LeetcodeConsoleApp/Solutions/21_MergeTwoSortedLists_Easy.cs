@@ -32,15 +32,15 @@ namespace LeetcodeConsoleApp.Solutions
             }
 
             int value;
-            if (listNode1.value < listNode2.value)
+            if (listNode1.val < listNode2.val)
             {
-                value = listNode1.value;
-                listNode1 = listNode1.nextNode;
+                value = listNode1.val;
+                listNode1 = listNode1.next;
             }
             else
             {
-                value = listNode2.value;
-                listNode2 = listNode2.nextNode;
+                value = listNode2.val;
+                listNode2 = listNode2.next;
             }
             return new ListNode(value, Merge(listNode1, listNode2));
         }
