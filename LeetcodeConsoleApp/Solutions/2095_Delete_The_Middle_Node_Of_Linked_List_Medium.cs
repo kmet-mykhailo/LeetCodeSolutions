@@ -2,7 +2,7 @@ using LeetcodeConsoleApp.Models;
 
 namespace LeetcodeConsoleApp.Solutions
 {
-    public class DeleteTheMiddleNodeOfALinkedList : ISolution
+    public class DeleteTheMiddleNodeOfLinkedList : ISolution
     {
         public void Run()
         {            
@@ -14,23 +14,12 @@ namespace LeetcodeConsoleApp.Solutions
                 ];
             foreach (var input in inputs)
             {
-                ListNode linkedList = ConvertArrayToLinkedList(input);
+                ListNode linkedList = new(input);
                 Console.WriteLine($"Input {linkedList}");
 
                 ListNode result = DeleteMiddle(linkedList);
                 Console.WriteLine($"Result {result}");
             }
-        }
-
-        private static ListNode ConvertArrayToLinkedList(int[] array)
-        {
-            ListNode list = new(array[^1]);
-            for (int i = array.Length - 2; i >= 0; i--)
-            {
-                list = new(array[i], list);
-            }
-
-            return list;
         }
 
         private static ListNode DeleteMiddle(ListNode head)
