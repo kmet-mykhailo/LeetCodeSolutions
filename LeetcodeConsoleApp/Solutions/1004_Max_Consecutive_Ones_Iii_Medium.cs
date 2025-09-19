@@ -44,6 +44,36 @@ namespace LeetcodeConsoleApp.Solutions
             }
         }
 
+        public int LongestOnes3(int[] nums, int k)
+        {
+            int max = 0, zeroLeft = k;
+
+            for (int i = 0, fromIndex = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == 0)
+                {
+                    zeroLeft--;
+                }
+
+                while (zeroLeft < 0)
+                {
+                    if (nums[fromIndex] == 0)
+                    {
+                        zeroLeft++;
+                    }
+                    fromIndex++;
+                }
+
+                int currentLength = i - fromIndex + 1;
+                if (currentLength > max)
+                {
+                    max = currentLength;
+                }
+            }
+
+            return max;
+        }
+
         public int LongestOnes(int[] nums, int k)
         {
             int fromIndex = 0, currentIndex = 0, max = 0, zeroLeft = k;

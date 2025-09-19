@@ -4,18 +4,77 @@ namespace LeetcodeConsoleApp.Solutions
     {
         public void Run()
         {
-            int[][] inputs = [ [0, 1], [42] ];
-            foreach (var input in inputs)
+            int[][] inputs = [
+            [0, 1, 1, 1, 0, 1, 1, 0, 1],
+            [1,1,1], 
+            [1, 1, 0, 1],
+            [1,1,0,1,0,0,1,0,1],
+            [0,0,0], //0
+            [0,0,1,1] // 2
+            ];
+            foreach (int[] input in inputs)
             {
-                var result = LongestSubarray(input);
+                int result = LongestSubarray(input);
                 Console.WriteLine($"Result {result}");
             }
         }
 
+
         private static int LongestSubarray(int[] nums)
         {
-            // TODO: Implement solution here
-            return default(int);
+            int max = 0, zeroLeft = 1;
+
+            for (int i = 0, fromIndex = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == 0)
+                {
+                    zeroLeft--;
+                }
+                while (zeroLeft < 0)
+                {
+                    if (nums[fromIndex] == 0)
+                    {
+                        zeroLeft++;
+                    }
+                    fromIndex++;
+                }
+                int currentLength = i - fromIndex + 1;
+                if (currentLength > max)
+                {
+                    max = currentLength;
+                }
+            }
+
+            return max - 1;
+        }
+
+        private static int LongestSubarray1(int[] nums)
+        {
+            int fromIndex = 0, currentIndex = 0, max = 0, zeroLeft = 1;
+
+            while (currentIndex < nums.Length)
+            {
+                if (nums[currentIndex] == 0)
+                {
+                    zeroLeft--;
+                }
+                while (zeroLeft < 0)
+                {
+                    if (nums[fromIndex] == 0)
+                    {
+                        zeroLeft++;
+                    }
+                    fromIndex++;
+                }
+                int currentLength = currentIndex - fromIndex + 1;
+                if (currentLength > max)
+                {
+                    max = currentLength;
+                }
+                currentIndex++;
+            }
+
+            return max - 1;
         }
     }
 }
