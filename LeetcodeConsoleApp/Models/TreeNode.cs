@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LeetcodeConsoleApp.Models
+﻿namespace LeetcodeConsoleApp.Models
 {
     internal class TreeNode
     {
