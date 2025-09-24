@@ -13,26 +13,40 @@
             right = rightChild;
         }
 
+        /// [5, 2,3, 6,7,8,9, 1,4,11,22,45,67,88,99]
+        /// [5, 2,n, 6,7,     1,4,11,22]
+        /// [5, n,3,     n,9,                 88,99]
         public TreeNode(int?[] array)
         {
             val = array[0].Value;
-            Queue<TreeNode?> queue = new();
-            for (int i = array.Length - 1; i > 0; i--)
+            if (array.Length == 1) return;
+
+            left = array[1].HasValue ? new TreeNode(array[1].Value) : null;
+            right = array[2].HasValue? new TreeNode(array[2].Value): null;
+
+            Queue<TreeNode> queue = new();
+            if (left != null) { queue.Enqueue(left); }
+            if (right != null) { queue.Enqueue(right); }
+
+            for (int i = 4; i <= array.Length; i+=2)
             {
-                if (i >= array.Length / 2)
+                TreeNode node = queue.Dequeue();
+                int? value = array[i - 1];
+                if (value.HasValue)
                 {
-                    queue.Enqueue(array[i].HasValue ? new TreeNode(array[i].Value) : null);
+                    node.left = new TreeNode(value.Value);
+                    queue.Enqueue(node.left);
                 }
-                else
+
+                if (i == array.Length) return;
+
+                value = array[i];
+                if (value.HasValue)
                 {
-                    TreeNode rightNode = queue.Dequeue();
-                    TreeNode leftNode = queue.Dequeue();
-                    queue.Enqueue(array[i].HasValue ? new TreeNode(array[i].Value, leftNode, rightNode) : null);
+                    node.right = new TreeNode(value.Value);
+                    queue.Enqueue(node.right);
                 }
             }
-
-            right = queue.Dequeue();
-            left = queue.Dequeue();
         }
     }
 }
