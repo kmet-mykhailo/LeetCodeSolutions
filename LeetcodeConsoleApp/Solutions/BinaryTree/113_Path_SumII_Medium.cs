@@ -86,7 +86,7 @@ namespace LeetcodeConsoleApp.Solutions.BinaryTree
             currentList.Add(root.val);
             targetSum -= root.val;
 
-            if (root.left == null && root.right.e == null && targetSum == 0)
+            if (root.left == null && root.right == null && targetSum == 0)
             {
                 allLists.Add(new List<int>(currentList));
                 return;
