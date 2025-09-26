@@ -1,7 +1,7 @@
 using LeetcodeConsoleApp.Models;
 using System.Xml.Linq;
 
-namespace LeetcodeConsoleApp.Solutions
+namespace LeetcodeConsoleApp.Solutions.BinaryTree
 {
     public class CountGoodNodesInBinaryTree : ISolution
     {

@@ -1,7 +1,7 @@
 using LeetcodeConsoleApp.Models;
 using System.Collections.Generic;
 
-namespace LeetcodeConsoleApp.Solutions
+namespace LeetcodeConsoleApp.Solutions.BinaryTree
 {
     public class MaximumDepthOfBinaryTree : ISolution
     {

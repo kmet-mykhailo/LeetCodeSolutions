@@ -1,6 +1,6 @@
 using LeetcodeConsoleApp.Models;
 
-namespace LeetcodeConsoleApp.Solutions
+namespace LeetcodeConsoleApp.Solutions.BinaryTree
 {
     public class LeafSimilarTrees : ISolution
     {
