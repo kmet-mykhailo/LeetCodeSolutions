@@ -22,7 +22,7 @@
             if (array.Length == 1) return;
 
             left = array[1].HasValue ? new TreeNode(array[1].Value) : null;
-            right = array[2].HasValue? new TreeNode(array[2].Value): null;
+            right = array.Length>2 && array[2].HasValue? new TreeNode(array[2].Value): null;
 
             Queue<TreeNode> queue = new();
             if (left != null) { queue.Enqueue(left); }
