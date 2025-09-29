@@ -48,5 +48,16 @@
                 }
             }
         }
+
+
+        public int?[] ToArray()
+        {
+            return [val, left?.val, right?.val];
+        }
+
+        public override string ToString()
+        {
+            return $"[ {string.Join(',', ToArray())} ]";
+        }
     }
 }
