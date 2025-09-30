@@ -22,7 +22,38 @@ namespace LeetcodeConsoleApp.Solutions.BinarySearchTree
 
         private static TreeNode DeleteNode(TreeNode root, int key)
         {
-            FindAndReplace(ref root, key);
+            if (root == null) return null;
+            if (root.val == key)
+            {
+                if (root.left == null)
+                {
+                    return root.right;
+                }
+                else if (root.right == null)
+                {
+                    return root.left;
+                }
+                else // find min from right subtree
+                {
+                    TreeNode temp = root.right;
+                    while(temp.left != null)
+                    {
+                        temp = temp.left;
+                    }
+                    root.val = temp.val;
+                    root.right = DeleteNode(root.right, temp.val);
+                }                
+            }
+
+            if( root.val > key)
+            {
+                root.left = DeleteNode(root.left, key);
+            }
+            else
+            {
+                root.right = DeleteNode(root.right, key);
+            }
+
             return root;
         }
 
