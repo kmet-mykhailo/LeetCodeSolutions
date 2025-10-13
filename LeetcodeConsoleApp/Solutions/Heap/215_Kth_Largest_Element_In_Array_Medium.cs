@@ -14,13 +14,11 @@ namespace LeetcodeConsoleApp.Solutions.Heap
 
         private static int FindKthLargest(int[] nums, int k)
         {
-            PriorityQueue<int, int> priorityQueue = new PriorityQueue<int, int>();
-            for (int i = 0; i < nums.Length; i++)
+            PriorityQueue<int, int> priorityQueue = new();
+
+            foreach (int element in nums)
             {
-                if (priorityQueue.Count < k)
-                {
-                    priorityQueue.Enqueue(nums[i], -nums[i]);
-                }
+                priorityQueue.Enqueue(element, -element);
 
             }
 
