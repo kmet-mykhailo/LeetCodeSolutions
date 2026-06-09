@@ -1,5 +1,6 @@
 ﻿using LeetcodeConsoleApp;
+using LeetcodeConsoleApp.Solutions.TwoPointers;
 using LeetcodeConsoleApp.Solutions;
 
-ISolution algorithm = new RemovingStarsFromAString();
+ISolution algorithm = new RemoveElementSolution();
 algorithm.Run();

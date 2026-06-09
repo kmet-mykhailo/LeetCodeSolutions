@@ -1,17 +1,12 @@
 using LeetcodeConsoleApp.Models;
 using LeetcodeConsoleApp.Solutions;
-using Xunit;
 
 namespace LeetcodeConsoleApp.Tests
 {
     public class AddTwoNumbersTests
     {
-        private readonly AddTwoNumbersSolution _solution;
-
-        public AddTwoNumbersTests()
-        {
-            _solution = new AddTwoNumbersSolution();
-        }
+        private readonly AddTwoNumbersSolution _solution = new ();
+        
 
         [Fact]
         public void AddTwoNumbers_BasicCase_ReturnsCorrectSum()
