@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Tools/">
+    <Project Path="Leetcode.CodeGeneratorConsoleApp/Leetcode.CodeGeneratorConsoleApp.csproj" />
+  </Folder>
+  <Project Path="LeetcodeConsoleApp.Tests/LeetcodeConsoleApp.Tests.csproj" />
+  <Project Path="LeetcodeConsoleApp/LeetcodeConsoleApp.csproj" />
+</Solution>
