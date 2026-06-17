@@ -14,16 +14,14 @@ public class RemoveDuplicatesFromSortedArray : ISolution {
     }
     
     public int RemoveDuplicates(int[] nums) {
-        int i1 = 0;
-        for(int i2 = 1; i2< nums.Length; i2++)
+        var notDuplicatesIndex = 0;
+        for(var i = 1; i < nums.Length; i++)
         {
-            if(nums[i1]!=nums[i2])
-            {
-                i1++;
-                nums[i1] = nums[i2];
-            }
+            if (nums[notDuplicatesIndex] == nums[i]) continue;
+            notDuplicatesIndex++;
+            nums[notDuplicatesIndex] = nums[i];
         }
 
-        return i1 + 1;
+        return notDuplicatesIndex + 1;
     }
 }
